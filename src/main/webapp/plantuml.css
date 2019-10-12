@@ -3,15 +3,17 @@
 ******************************/
 
 /* Font */
-h1, p, #content a {
-    font-family: arial,helvetica,sans-serif;
+h1,
+p,
+#content a {
+    font-family: arial, helvetica, sans-serif;
     /* font-size: medium; */
 }
 
 /* Header */
 #header {
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     text-align: center;
 }
 
@@ -19,11 +21,23 @@ h1, p, #content a {
 #content {
     margin-left: auto;
     margin-right: auto;
-    width: 95%;    
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+#content #forms {
+    flex: 1;
+}
+
+#content #diagram-zone {
+    flex: 1;
 }
 
 /* Form inputs */
-#content textarea, #content .CodeMirror, #content input[type=text] {
+#content textarea,
+#content .CodeMirror,
+#content input[type=text] {
     background-color: #ffc;
     font-family: monospace;
     font-size: medium;
